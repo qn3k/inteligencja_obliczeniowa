@@ -5,7 +5,7 @@ df = pd.read_csv("iris.csv")
 
 #print(df)
 
-(train_set, test_set) = train_test_split(df.values, train_size = 0.7, random_state=11)
+(train_set, test_set) = train_test_split(df.values, train_size = 0.7, random_state=285711)
 
 #print(train_set)
 #print(test_set.shape[0])
