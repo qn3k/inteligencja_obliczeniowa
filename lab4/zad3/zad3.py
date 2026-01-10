@@ -2,12 +2,13 @@ import cv2
 import os
 import numpy as np
 
-N=50 #progrowanie wielkosci konturu
+N=90 #progrowanie wielkosci konturu
 
 FOLDER = "bird_miniatures/"
 
 def count_birds(image_path):
     img = cv2.imread(image_path)
+    img = cv2.resize(img, (500, 500), interpolation=cv2.INTER_AREA)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
     # poprawa kontrastu 
